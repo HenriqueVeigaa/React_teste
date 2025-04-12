@@ -1,4 +1,6 @@
 import CustomButton from "@/components/CustomButton";
+import Example from "@/components/Example";
+import Form from "@/components/Form";
 import React, { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
 
@@ -23,6 +25,8 @@ export default function HomeScreen() {
                     onChangeText={setNome}
                 />
                 <CustomButton title= "Botão teste" onPress={() => {setCount(count + 1)}}/>
+                    <Example/>
+                    <Form/>
         </View>
     );
 
